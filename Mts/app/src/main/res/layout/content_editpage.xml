@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Editpage"
+    tools:showIn="@layout/activity_editpage">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Font"
+        android:textSize="9dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/fontsp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/sizesp"
+        android:layout_below="@+id/txt"></Spinner>
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/sizesp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt"></Spinner>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fontsp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        android:padding="5dp"
+        android:background="@drawable/border_orange6"
+        >
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etname"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Title"
+            android:inputType="textMultiLine"
+            android:textCursorDrawable="@drawable/rounded_down_corners_bg"
+            android:textSize="15dp"
+
+
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAnimating="true"
+            app:met_primaryColor="?colorAccent"
+            app:met_textColorHint="@color/black"
+            app:paddingStart="10dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/ettxt"
+            android:gravity="top"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/etname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Converted Data"
+            android:inputType="textMultiLine"
+            android:textCursorDrawable="@drawable/rounded_down_corners_bg"
+            android:textSize="15dp"
+
+
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAnimating="true"
+            app:met_primaryColor="?colorAccent"
+            app:met_textColorHint="@color/black"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back_appblue_corder"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="Send"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+</RelativeLayout>

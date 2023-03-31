@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MTC</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_home">home</string>
+    <string name="title_activity_profile">profile</string>
+    <string name="title_activity_text_recognizattion">textRecognizattion</string>
+    <string name="title_activity_editpage">Editpage</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_pdfopen">pdfopen</string>
+    <string name="title_activity_image_label">ImageLabel</string>
+</resources>

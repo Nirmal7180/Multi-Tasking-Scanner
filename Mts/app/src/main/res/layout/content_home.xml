@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".home"
+    tools:showIn="@layout/activity_home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/app_blue">
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#FFF"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/name"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        ></View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/editpro"
+        android:textColor="@color/white"
+        android:background="@drawable/butnclick"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black_off"
+        android:text="Meet Patel"
+        android:layout_below="@+id/profile_image"
+        android:textSize="18dp"
+        android:id="@+id/name"
+        android:textStyle="bold"/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Developed by FriendlyItSolution"
+        android:background="@color/app_blue"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
+
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+
+            android:background="@drawable/bkff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/nfeed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/im1"
+                    android:src="@drawable/text_icon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/im1"
+                    android:textColor="@color/white"
+                    android:text="Text Scanner"
+
+
+                    android:gravity="center"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/neword"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button">
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/im3"
+                    app:srcCompat="@drawable/his_icon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/im3"
+                    android:textColor="@color/white"
+                    android:text="History"
+
+
+                    android:gravity="center"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+
+            android:background="@drawable/bkff"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/dash"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/im2"
+                    android:src="@drawable/obj_cion"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/im2"
+                    android:textColor="@color/white"
+                    android:text="Object Scanner"
+
+
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/im4"
+                    android:src="@drawable/ewalletpngicon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/im4"
+                    android:textColor="@color/white"
+                    android:text="..."
+
+
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
